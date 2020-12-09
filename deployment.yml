@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -14,7 +13,7 @@ spec:
         app: trivial-go-web-app
     spec:
       containers:
-      - name: webserver-simple
-        image: docker.io/kostiscodefresh/simple-web-app:3d9b390
-        ports:
-        - containerPort: 8080
+        - name: webserver-simple
+          image: docker.io/mklimko/simple-web-app:c71d941
+          ports:
+            - containerPort: 8080
