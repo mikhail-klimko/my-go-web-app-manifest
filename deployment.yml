@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: webserver-simple
-          image: docker.io/mklimko/simple-web-app:9ff862d
+          image: docker.io/mklimko/simple-web-app:e08744d
           ports:
             - containerPort: 8080
