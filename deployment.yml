@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simple-deployment
+  name: my-go-web-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: trivial-go-web-app
+      app: my-go-web-app
   template:
     metadata:
       labels:
-        app: trivial-go-web-app
+        app: my-go-web-app
     spec:
       containers:
         - name: webserver-simple
-          image: docker.io/mklimko/simple-web-app:7624cbb
+          image: docker.io/mklimko/my-go-web-app:7624cbb
           ports:
             - containerPort: 8080
