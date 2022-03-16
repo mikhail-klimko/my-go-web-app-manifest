@@ -1,0 +1,8 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: my-go-web-app
+  labels:
+    app: my-go-web-app
+data:
+  key: default
